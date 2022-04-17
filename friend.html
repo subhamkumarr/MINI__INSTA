@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini insta--WOC project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="friend.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">. -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <h2 class="logo">Mini Insta</h2>
+            </a>
+            <ul>
+
+                <li><img src="images/notification.png" onclick="settingsMenuuToggle()"></li>
+
+                <li><img src="images/inbox.png" onclick="settingsMenuueToggle()"></li>
+                <li>
+                    <a href="https://www.youtube.com/"><img src="images/video.png"></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right">
+
+            <form action="profile.html" class="search-box">
+                <button type="submit"><img src="images/search.png"></button>
+                <input type="text" placeholder="Search">
+            </form>
+            <!-- </div> -->
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/dp5.jpg">
+            </div>
+
+        </div>
+
+        <!-- ---------------------------------------settings menu------------------------------------------- -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+            <!-- --------------------------------------------theme customization------------------------------ -->
+            <div class="customize-theme">
+                <div class="card">
+                    <h2>Customize your view</h2>
+                    <p class="text-muted">Manage your font size, color, and backgroung</p>
+
+                    <!-- -------------------------------------------font size---------------------------------- -->
+                    <div class="font-size">
+                        <h4>Font-size</h4>
+                        <div>
+                            <h6>Aa</h6>
+                            <div class="choose-size">
+                                <span class="font-size-1"></span>
+                                <span class="font-size-2 active"></span>
+                                <span class="font-size-3"></span>
+                                <span class="font-size-4"></span>
+                                <span class="font-size-5"></span>
+                            </div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+
+                    <!-- -----------------------------primary color--------------------------- -->
+                    <div class="color">
+                        <h4>Color</h4>
+                        <div class="choose-color">
+                            <span class="color-1 active"></span>
+                            <span class="color-2"></span>
+                            <span class="color-3"></span>
+                            <span class="color-4"></span>
+                            <span class="color-5"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <a href="profile.html">See Your Profile</a>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="http://www.instagram.feedback/review">Help us to improve developmet skill</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="https://help.instagram.com/284802804971822">Settings & Privacy<i
+                            class="uil uil-angle-right-b"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="https://help.instagram.com/">Help & Support<i class="uil uil-angle-right-b"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<i class="uil uil-angle-right-b"></i></a>
+                </div>
+
+
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="indexx.html">LogOut<i class="uil uil-angle-right-b"></i></a>
+                </div>
+
+
+                <div class="menu-item setting-links" id="theme">
+                    <img src="images/theme1.png" class="settings-icon">
+                    <a href="#">THEME<i class="uil uil-angle-right-b"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- -------------------------------------------------notifications-popup------------------------------------------- -->
+
+        <div class="settings-menuu">
+            <div class="settings-menuu-inner">
+                <div class="user-profile">
+                    <img src="images/dp3.jpg">
+                    <div>
+                        <!-- <b> Akriti Agrahari</b> -->
+                        <!-- <p>Akriti Agrahari</p> -->
+                        <span>Akriti Agrahari</span>
+                        <p class="text-bold">Accepted your friend request</p>
+                        <!-- <span>Accepted your friend request</span> -->
+                        <!-- <br> -->
+                        <small class="text-muted">2 MINUTES AGO</small>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/photo6.png">
+                    <div>
+                        <!-- <b> Stev Smith</b> -->
+                        <span>Stev Smith</span>
+                        <p class="text-bold">Commented on your post</p>
+                        <small class="text-muted">2 HOURS AGO</small>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-8.png">
+                    <div>
+                        <!-- <b> Jackie Jane</b> -->
+                        <span> Jackie Jane</span>
+                        <p class="text-bold">Accepted your friend request</p>
+                        <small class="text-muted">2 DAYS AGO</small>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-7.png">
+                    <div>
+                        <!-- <b> Harry Cook</b> -->
+                        <span>Harry Cook</span>
+                        <p class="text-bold">Liked your post</p>
+                        <small class="text-muted">2 DAYS AGO</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------------------------------------messages popup------------------------------- -->
+
+
+        <div class="settings-menuue">
+            <div class="settings-menuue-inner ">
+                <div class="user-profile ">
+                    <img src="images/member-1.png">
+
+                    <div>
+                        <!-- <h5>Edem Quist</h5> -->
+                        <span>Edem Quist</span>
+                        <!-- <p>Edem Quist</p> -->
+                        <p class="text-bold">Just woke up bruh</p>
+                        <!-- <span>Just woke up bruh</span> -->
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/photo6.png">
+                    <div>
+                        <span>Adem Wales</span>
+                        <p class="text-muted">Ok</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-8.png">
+                    <div>
+                        <span>Daniella Jackson</span>
+                        <p class="text-bold">2 new messages</p>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/dp3.jpg">
+                    <div>
+                        <span>Juliet Markarey</span>
+                        <p class="text-muted">lol u right</p>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-6.png">
+                    <div>
+                        <span>Jane Doe</span>
+                        <p class="text-bold">Birthday Tomorrow</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="user-info">
+        <img src="images/spiderman-5561671_1920.jpg" class="user-dp" alt="">
+        <div class="info-container">
+            <!-- <h1 class="name">Sanket Singh</h1> -->
+            <!-- <p class="name">Sanket Singh</p> -->
+            <h2 class="name">Sanket Singh</h2>
+            <p class="username">@isanketsingh</p>
+
+            <p> 👨🏻‍💻 Software Engineer @google</p>
+            <!-- <h1 class="namee">You are not connected</h1> -->
+
+        </div>
+        <p class="number-card following-card">
+            2K <SPan>Following</SPan>
+        </p>
+        <p class="number-card followers-card">
+            6K <SPan>Followers</SPan>
+        </p>
+        <p class="number-card posts-card">
+            8 <SPan>Posts</SPan>
+        </p>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn follow-btn">Follow</button>
+        <h3></h3>
+        <h1 class="namee">You are not following</h1>
+       
+    </div>
+
+
+
+
+
+    <div class="posts-container">
+        <div class="post">
+            <img src="images/feed2.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed1.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed3.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed7.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed9.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed5.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed1.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/feed10.jpg">
+            <div class="likes">
+                <img src="images/heart.webp" class="icon" alt="">
+                <p class="likes-count">2.7k likes</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let btnSend = document.querySelector('.follow-btn');
+        let messagee = document.querySelector('h1');
+
+        btnSend.addEventListener('click', () => {
+            btnSend.innerText = 'Following';
+
+            setTimeout(() => {
+                btnSend.style.display = '';
+                messagee.innerText = 'You started following';
+            }, 2000);
+
+        });
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

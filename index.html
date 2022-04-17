@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini insta--WOC project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <h2 class="logo">Mini Insta</h2>
+            </a>
+            <ul>
+
+                <li><img src="images/notification.png" onclick="settingsMenuuToggle()"></li>
+
+                <li><img src="images/inbox.png" onclick="settingsMenuueToggle()"></li>
+                <li>
+                    <a href="https://www.youtube.com/"><img src="images/video.png"></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right">
+
+            <form action="friend.html" class="search-box">
+                <div class="profile-photo">
+                    <img src="dp5.jpg" alt="">
+                </div>
+                <input type="text" placeholder="Search Friends" id="create-post">
+                <button type="submit"><img src="images/search.png"></button>
+            </form>
+
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/dp5.jpg">
+            </div>
+
+        </div>
+
+        <!-- ---------------------------------------settings menu------------------------------------------- -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+            <!-- --------------------------------------------theme customization------------------------------ -->
+            <div class="customize-theme">
+                <div class="card">
+                    <h2>Customize your view</h2>
+                    <p class="text-muted">Manage your font size, color, and backgroung</p>
+
+                    <!-- -------------------------------------------font size---------------------------------- -->
+                    <div class="font-size">
+                        <h4>Font-size</h4>
+                        <div>
+                            <h6>Aa</h6>
+                            <div class="choose-size">
+                                <span class="font-size-1"></span>
+                                <span class="font-size-2 active"></span>
+                                <span class="font-size-3"></span>
+                                <span class="font-size-4"></span>
+                                <span class="font-size-5"></span>
+                            </div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+
+                    <!-- -----------------------------primary color--------------------------- -->
+                    <div class="color">
+                        <h4>Color</h4>
+                        <div class="choose-color">
+                            <span class="color-1 active"></span>
+                            <span class="color-2"></span>
+                            <span class="color-3"></span>
+                            <span class="color-4"></span>
+                            <span class="color-5"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------setting--------------------------------------------- -->
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <a href="profile.html">See Your Profile</a>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="http://www.instagram.feedback/review">Help us to improve developmet skill</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="https://help.instagram.com/284802804971822">Settings & Privacy<i
+                            class="uil uil-angle-right-b"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="https://help.instagram.com/">Help & Support<i class="uil uil-angle-right-b"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<i class="uil uil-angle-right-b"></i></a>
+                </div>
+
+                <div class="setting-links">
+
+                    <img src="images/logout.png" class="settings-icon">
+                    <button class="btn btn-danger" onclick="logout()">Logout <i
+                            class="uil uil-angle-right-b"></i></button>
+                </div>
+
+                <!-- <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="indexx.html">LogOut<i class="uil uil-angle-right-b"></i></a>
+                </div> -->
+
+
+                <div class="menu-item setting-links" id="theme">
+                    <img src="images/theme1.png" class="settings-icon">
+                    <a href="#">THEME<i class="uil uil-angle-right-b"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- -------------------------------------------------notifications-popup------------------------------ -->
+
+        <div class="settings-menuu">
+            <div class="settings-menuu-inner">
+                <div class="user-profile">
+                    <img src="images/dp3.jpg">
+                    <div>
+                        <span>Akriti Agrahari</span>
+                        <p class="text-bold">Accepted your friend request</p>
+                        <small class="text-muted">2 MINUTES AGO</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/photo6.png">
+                    <div>
+                        <span>Stev Smith</span>
+                        <p class="text-bold">Commented on your post</p>
+                        <small class="text-muted">2 HOURS AGO</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-8.png">
+                    <div>
+                        <span> Jackie Jane</span>
+                        <p class="text-bold">Accepted your friend request</p>
+                        <small class="text-muted">2 DAYS AGO</small>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-7.png">
+                    <div>
+                        <span>Harry Cook</span>
+                        <p class="text-bold">Liked your post</p>
+                        <small class="text-muted">2 DAYS AGO</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------------------------------------messages popup------------------------------- -->
+
+        <div class="settings-menuue">
+            <div class="settings-menuue-inner ">
+                <div class="user-profile ">
+                    <img src="images/member-1.png">
+
+                    <div>
+                        <span>Edem Quist</span>
+                        <p class="text-bold">Just woke up bruh</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/photo6.png">
+                    <div>
+                        <span>Adem Wales</span>
+                        <p class="text-muted">Ok</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-8.png">
+                    <div>
+                        <span>Daniella Jackson</span>
+                        <p class="text-bold">2 new messages</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/dp3.jpg">
+                    <div>
+                        <span>Juliet Markarey</span>
+                        <p class="text-muted">lol u right</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/member-6.png">
+                    <div>
+                        <span>Jane Doe</span>
+                        <p class="text-bold">Birthday Tomorrow</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- ---------------------------------------------navend----------------------------------------------- -->
+
+    <div class="container">
+        <!-- -------------------left sidebar-------------------------------------------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="https://www.indiatoday.in/"><img src="images/news.png">Latest News</a>
+                <a href="https://www.flipkart.com/"><img src="images/marketplace.png">Marketplace</a>
+                <a href="https://www.youtube.com/"><img src="images/watch.png">Watch</a>
+                <a href="profile.html"> <img src="images/dp5.jpg"> Profile</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Yours Shortcuts</p>
+                <a href="https://leetcode.com/profile/account/"> <img src="images/LeetCode_logo_rvs (1).png">
+                    leetcode</a>
+                <a href="https://www.linkedin.com/feed/?trk=IN-SEM_google-adwords_Jordan-brand-sign-up"> <img
+                        src="images/linkedin - Copy.png"> Linkedin</a>
+                <a href="https://www.hackerearth.com/challenges/hackathon/"><img src="images/hack.png">hackerearth</a>
+            </div>
+        </div>
+        <!-- ------------------------------------------main content----------------------------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/dp6.jpg">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/dp3.jpg">
+                    <p>Samona</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Lana</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Peter</p>
+                </div>
+            </div>
+
+            <!-- -------------------------------post sections-------------------------------------------- -->
+
+            <div class="write-post-container">
+
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <small>Public<i class="uil uil-angle-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Subham?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="https://meet.google.com/jdm-tmhn-eqj"><img src="images/live-video.png">Live Video</a>
+                        <div class="upload" onclick="settingsMeenuueToggle()">
+                            <img src="images/photo.png" class="gg">
+                            <label for="">Photo/Viedo</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="containerr">
+                    <div class="containeer">
+                        <div class="containeer">
+                            <label>Image Name </label><input type="text" id="namebox"><label id="extlab"></label>
+                            <br><br>
+                            <img id="myimg"> <label id="upprogress"></label> <br><br>
+
+                            <button id="selbtn">Select Image</button>
+                            <button id="upbtn">Upload Image</button>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- -----------------------------------------feeds1--------------------------------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <span>April 10 2022, 13:40 pm <br>Dubai <i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">Money Can't Buy Happiness? <span> HABIBI</span> Come to DUBAI. <a
+                        href="#">#DubaiLifestyle</a></p>
+                <div>
+
+
+                    <img src="images/feed9.jpg" class="post-img">
+
+                    <!-- ----------------------------share----------------------------------- -->
+                    <!-- <div class="settings-menu"> -->
+
+
+                        <!-- <div class="settingss-menuue">
+
+
+                            <div class="post-overlays">
+                                <div class="share-window">
+                                    <h1 class="title">Share the post with others</h1>
+                                    <div class="share-link-container">
+                                        <input type="text" id="share-link" value="https://www.socialize.com/post/2349857"
+                                            disabled>
+                                        <button class="copy-btn">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+                        <!-- ---------------------------share---------------------------------------------- -->
+
+                    <!-- </div> -->
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+
+
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span class="share-btn"><i class="uil uil-share" ></i></span>
+
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Ernet Achiever</b> and <b>2,218 others</b></p>
+                </div>
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 154 comments</div>
+            </div>
+            <!-- ------------------------------------feed2------------------------------------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/dp4.jpg">
+                    <div>
+                        <p>Juli Lrb</p>
+                        <span>April 8 2022, 11:02 am <br>Germany, Hamburg <i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">I always say I have two hearts – one beats for Poland and the other for
+                    Germany. <a href="#">#ProudGerman</a></p>
+
+
+
+
+
+
+
+
+                <img src="images/feed2.jpg" class="post-img">
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Juli</b> and <b>12,863 others</b></p>
+                </div>
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 325 comments</div>
+
+            </div>
+            <!-- --------------------------------viedo----------------------------------------------------- -->
+
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <span>April 10 2022, 13:40 pm <br>Dubai <i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">Money Can't Buy Happiness? <span> HABIBI</span> Come to DUBAI. <a
+                        href="#">#DubaiLifestyle</a></p>
+                <video class="viedo" controls="controls">
+                    <source src="viedo4.mp4" viedo="Web/mp4">
+                </video>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Juli</b> and <b>12,863 others</b></p>
+                </div>
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 325 comments</div>
+
+            </div>
+
+
+            <!-- -------------------------------feed3----------------------------------------------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/photo4.png">
+                    <div>
+                        <p>Alber Hook</p>
+                        <span>April 3 2022, 13:40 pm <br>Maldevis<i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">"Somewhere between living and dreaming, there’s the Maldives
+                    ". <a href="#">#Summer</a></p>
+                <img src="images/feed8.jpg" class="post-img">
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Andreson</b> and <b>2,218 others</b></p>
+                </div>
+
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 154 comments</div>
+
+            </div>
+
+
+            <!-- ----------------------viedo 2---------------------------------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/dp5.jpg">
+                    <div>
+                        <p>Subham Kumar</p>
+                        <span>April 10 2022, 13:40 pm <br>IIT (ISM) Dhanbad <i
+                                class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">Indian Institute of Technology (Indian School Of Mines) Dhanbad. <a
+                        href="#">#CampusLife</a></p>
+                <video class="viedo" controls="controls">
+                    <source src="viedo6.mp4" viedo="Web/mp4">
+                </video>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Juli</b> and <b>12,863 others</b></p>
+                </div>
+
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 1125 comments</div>
+
+            </div>
+            <!-- --------------------------------feed4------------------------------------------------ -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-3.png">
+                    <div>
+                        <p>Jane White</p>
+                        <span>April 1 2022, 8:12 am <br>Petra <i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">"When you do great things, your legacy will remain long after you're gone." <a
+                        href="#">#heritage</a></p>
+                <img src="images/feed11.jpg" class="post-img">
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Lana Rose</b> and <b>218 others</b></p>
+                </div>
+
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+                <div class="comments text-muted">View all 1,154 comments</div>
+
+            </div>
+            <!-- ---------------------------------------feed5---------------------------------------------- -->
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/member-1.png">
+                    <div>
+                        <p>Tina Cook</p>
+                        <span>March 30 2022, 6:02 am <br>IIT (ISM) Dhambad<i class="uil uil-map-marker-alt"></i></span>
+                    </div>
+
+                </div>
+
+                <p class="post-text">"They say college is where you find yourself, but I keep getting lost on the
+                    way to
+                    class, so I have to find that first." <a href="#">#CampusLife</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span class="like"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark"></i></span>
+                    </div>
+                </div>
+
+                <div class="liked-by">
+                    <span><img src="images/dp1.jpg" alt=""></span>
+                    <span><img src="images/dp5.jpg" alt=""></span>
+                    <span><img src="images/dpp333.jpg" alt=""></span>
+                    <p>Liked by <b>Josh Lane</b> and <b>543 others</b></p>
+                </div>
+
+                <br>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><i class="uil uil-comment-dots"></i></button>
+                </div>
+
+                <div class="comments text-muted">View all 108 comments</div>
+
+            </div>
+            <!-- -------------------------------------feed 6-------------------------------------------------- -->
+
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <!-- -----------------------------------------------right sidebar---------------------------------- -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>20</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Cyberlab-WOC</h4>
+                    <p><i class="uil uil-map-marker-alt"></i>IIT (ISM) Dhanbad</p>
+                    <a href="https://woc.cyberlabs.club/">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>6</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Hackfest</h4>
+                    <p><i class="uil uil-map-marker-alt"></i>IIT (ISM) Dhanbad</p>
+                    <a href="https://www.hackfestiitism.com/">More Info</a>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <a href="https://woc.cyberlabs.club/">
+                <img src="images/woc22.jpg" class="sidebar-ads">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy;2022 - Mini-Insta project</p>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="index.js"></script>
+    <script src="upload.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".like").click(function () {
+                $(this).toggleClass("heart");
+            });
+        });
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDkz44ywFThm1VhMqJBTb1G_yr96g2IkQs",
+            authDomain: "media1-c9288.firebaseapp.com",
+            databaseURL: "https://media1-c9288-default-rtdb.firebaseio.com",
+            projectId: "media1-c9288",
+            storageBucket: "media1-c9288.appspot.com",
+            messagingSenderId: "293046341155",
+            appId: "1:293046341155:web:ce213cbf345283599c6b96"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL }
+            from "https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js"
+
+        // ---------------variable and referance----------------------------
+        var files = [];
+        var reader = new FileReader();
+
+        var namebox = document.getElementById('namebox');
+        var extlab = document.getElementById('extlab');
+        var myimg = document.getElementById('myimg');
+        var proglab = document.getElementById('upprogress');
+        var selBtn = document.getElementById('selbtn');
+        var UpBtn = document.getElementById('upbtn');
+        var DownBtn = document.getElementById('downbtn');
+
+        var input = document.createElement('input');
+        input.type = 'file';
+
+        input.onchange = e => {
+            files = e.target.files;
+
+            var extension = GetFileExt(files[0]);
+            var name = GetFileName(files[0]);
+
+            namebox.value = name;
+            extlab.innerHTML = extension;
+
+            reader.readAsDataURL(files[0]);
+        }
+        reader.onload = function () {
+            myimg.src = reader.result;
+        }
+
+        // ---------------selection-----------------------------------
+        selBtn.onclick = function () {
+            input.click();
+        }
+
+        function GetFileExt(file) {
+            var temp = file.name.split('.');
+            var ext = temp.slice((temp.length - 1), (temp.length));
+            return '.' + ext[0];
+        }
+
+        function GetFileName(file) {
+            var temp = file.name.split('.');
+            var fname = temp.slice(0, -1).join('.');
+            return fname;
+        }
+        // -----------------upload process-----------------------
+
+        async function UploadProcess() {
+            var ImgToUpload = files[0];
+
+            var ImgName = namebox.value + extlab.innerHTML;
+
+
+
+            if (!validateName()) {
+                alert('name cannot contain ".", "#", "$", "[", or "]"');
+                return;
+            }
+
+
+            const metaData = {
+                contentType: ImgToUpload.type
+            }
+
+            const storage = getStorage();
+
+            const storageRef = sRef(storage, "Images/" + ImgName);
+
+            const UploadTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
+
+            UploadTask.on('state-changed', (snapshot) => {
+                var progess = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab.innerHTML = "Upload" + progess + "%";
+            },
+
+                (error) => {
+                    alert("error: image not uploaded!");
+                },
+                () => {
+                    getDownloadURL(UploadTask.snapshot.ref).then((downloadURL) => {
+                        console.log(downloadURL);
+                    });
+                }
+            );
+        }
+        // -----------------------function for realtime database---------------------------------
+
+        function saveURLtoRealtimeDB(URL) {
+            var name = namebox.value;
+            var ext = extlab.innerHTML;
+
+            set(ref(realdb, "ImagesLinks/" + name), {
+                ImageName: (name + ext),
+                ImgUrl: URL
+            });
+        }
+
+
+        function GetUrlfromRealtimeDB(URL) {
+            var name = namebox.value;
+
+            var dbRef = ref(realdb);
+
+            get(child(dbRef, "ImagesLinks/" + name)).then((snapshot) => {
+                if (snapshot.exists()) {
+                    myimg.src = snapshot.val().ImgUrl;
+                }
+            })
+
+        }
+
+        function validateName() {
+            var regex = /[\.#$\[\]]/
+            return !(regex.test(namebox.value));
+        }
+
+
+
+
+        UpBtn.onclick = UploadProcess;
+        DownBtn.onclick = GetUrlfromRealtimeDB;
+
+    </script>
+
+</body>
+
+</html>

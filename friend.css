@@ -1,0 +1,163 @@
+/* body{
+    padding: 0 10vw 100px;
+} */
+.user-info {
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+    padding: 0 10vw 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.user-info img {
+    border-radius: 50%;
+
+}
+.info-container  h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+.user-dp {
+    width: 150px;
+    height: 150px;
+}
+
+.user-info .username {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    color: grey;
+}
+
+.user-info .name, p, span{
+    color: rgb(94, 86, 86);
+}
+
+.number-card {
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.number-card span {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: capitalize;
+    /* display: block; */
+
+}
+.btn-container h1{
+    font-size: 17px;
+    /* margin: 134px 302px; */
+    margin: 137px 202px;
+    /* color: rgb(94, 86, 86); */
+    /* color: #1876f2; */
+     color: var(--aa-color);
+}
+
+
+.btn-container {
+    margin-top: -230px;
+    text-align: center;
+    gap: 26px;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 568px;
+}
+/* button {
+    padding: 10px;
+    } */
+
+.btn-container .btn {
+    width: 100px;
+    height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: #1876f2;
+    color: white;
+    border-radius: 6px;
+    border: 0.5px solid white;
+    height: 34px;
+    margin: 133px -236px;
+}
+
+.posts-container {
+    margin: 40px 0;
+    /* margin: 195px 0; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.posts-container .post {
+    width: 100%;
+    border: none;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    position: relative;
+    padding: -5px;
+    margin-top: px;
+    margin-left: 34px;
+    /* justify-content: space-between; */
+    margin-right: 44px;
+    border-radius: 10px;
+
+
+    /* width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+    position: relative;  */
+
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.posts-container .likes {
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: .1s;
+}
+.posts-container .post:hover .likes{
+    opacity: 1;
+}
+.likes .icon{
+    width: 40px;
+    height: 40px;
+}
+.likes .likes-count{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
